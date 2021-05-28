@@ -1,0 +1,119 @@
+/* Start Dark Mode Specs */
+:root {
+    --mainNightColor: #0E0E0E;
+    --mainLessNightColor: rgb(14 14 14 / 99%);
+    --mainLessWhiteColor: rgb(255 255 255 / 80%);
+    --whiteColor: white;
+    --mainColor: #FA6B50;
+    --formInputColor: #262626;
+}
+::selection {
+    background-color: black;
+    color: var(--mainColor);
+    text-shadow: none;
+}
+.main-heading h2, .home .content .text h1 {
+    text-shadow: 0 0 7px var(--whiteColor), 0 0 3px var(--whiteColor);
+}
+.main-heading p, .footer .copyright {
+    text-shadow: 0 0 5px var(--mainLessWhiteColor);
+}
+header nav .side-bar, .icons, 
+.success-stories .success-explain .success-section .side-two a:hover,
+.contact-us {
+    background-color: var(--mainNightColor);
+}
+.main-heading p, header nav .side-bar .sidebar-close, .icons .icon-box .text p, 
+.success-stories .success-explain .success-section .side-two p,
+.success-stories .success-explain .success-section .side-two .close-btn,
+.contact-us .content .info address, .contact-us .content .info a,
+.contact-us .content .info .phone, .footer .copyright {
+    color: var(--mainLessWhiteColor);
+}
+header nav .side-bar h3 {
+    color: var(--whiteColor);
+    text-shadow: 0px 0px 2px var(--whiteColor);
+}
+.main-heading h2, header nav .side-bar ul li a, .icons .icon-box .text h3, 
+.success-stories .success-explain .success-section .side-two h3,
+.contact-us .content .info h4 {
+    color: var(--whiteColor);
+}
+header nav .side-bar img {
+    filter: none;
+}
+header nav .side-bar .side-bar-social i {
+    background-color: var(--mainColor);
+    color: var(--mainNightColor);
+    box-shadow: 0 0 7px var(--mainColor);
+}
+header nav .side-bar .side-bar-social i:hover {
+    background-color: var(--mainNightColor);
+    color: var(--mainColor);
+    box-shadow: none;
+    text-shadow: 0 0 7px var(--mainColor);
+}
+/* End Header */
+/* Start Icons Section */
+.icons .icon-box i {
+    border: 1px solid var(--mainLessWhiteColor);
+}
+.icons .icon-box i.active,
+.icons .icon-box i:hover {
+    color: var(--mainNightColor);
+    box-shadow: 0px 0px 20px #C5A84A, 0px 0px 15px var(--mainColor);
+}
+/* End Icons Section */
+/* Start Success Stories Section */
+.success-stories, .footer {
+    background-color: var(--mainLessNightColor);
+}
+/* -------- Stories Overhide -------- */
+.success-stories .success-explain .success-section {
+    border: none;
+    box-shadow: 0px 0px 10px var(--mainColor),0px 0px 15px var(--mainColor);
+}
+/* -------- Stories Overhide -------- */
+.success-stories .success-imgs .success-box .plus-sign {
+    color: var(--mainLessWhiteColor);
+    background-color: var(--mainColor);
+    box-shadow: 0px 0px 10px var(--mainColor),0px 0px 15px var(--mainColor);
+}
+/* End Success Stories Section */
+/* Start Contact Us Section */
+.contact-us .content form .contact-input {
+    background-color: var(--formInputColor);
+    color: var(--whiteColor);
+    box-shadow: 0 0 5px lavender;
+}
+.contact-us .content form .contact-input:focus {
+    box-shadow: 0 0 5px var(--mainColor);
+    color: var(--mainColor);
+}
+.contact-us .content form .contact-input:focus::placeholder {
+    color: rgb(250 107 80 / 60%);
+}
+.contact-us .content form input[type="submit"] {
+    background-color: var(--formInputColor);
+    color: var(--whiteColor);
+    opacity: 1;
+    box-shadow: 0 0 5px lavender;
+}
+.contact-us .content form input[type="submit"]:hover {
+    box-shadow: 0 0 5px var(--mainColor);
+}
+/* End Contact Us Section */
+/* Start Footer */
+.footer .social-footer i {
+    color: var(--mainLessNightColor);
+    background-color: var(--mainColor);
+    box-shadow: 0 0 7px var(--mainColor);
+}
+.footer .social-footer i:hover {
+    background-color: rgb(14 14 14 / 0%);
+    color: var(--mainColor);
+    box-shadow: none;
+    text-shadow: 0 0 7px var(--mainColor);
+}
+/* End Footer */
+/* End Dark Mode Specs */
