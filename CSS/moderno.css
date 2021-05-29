@@ -305,6 +305,9 @@ header nav .side-bar .side-bar-social i:hover {
     opacity: var(--highElementOpacity);
 }
 @media (max-width: 767px) {
+    .home .content .home-buttons .home-btn {
+        box-shadow: none;
+    }
     .home .content .home-buttons .home-btn:hover {
         box-shadow: 0 0 30px var(--mainColor), 0 0 20px var(--mainColor);
     }
