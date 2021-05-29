@@ -484,11 +484,7 @@ header nav .side-bar .side-bar-social i:hover {
     background-color: rgb(0 0 0 / 50%);
     opacity: 0;
     transition: var(--elementTransitionDuration);
-}
-@media (max-width: 767px) {
-    .success-stories .success-imgs .success-box::before {
-        height: 97%;
-    }
+    overflow: hidden;
 }
 .success-stories .success-imgs .success-box .plus-sign {
     font-weight: 600;
